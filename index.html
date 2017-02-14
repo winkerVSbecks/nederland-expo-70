@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
   <style>
-    .bg-silk { background-color: #baada4; }
     .stamp-border {
       border-width: 1rem;
       border-style: solid;
@@ -16,6 +15,22 @@
       border-image-repeat: round;
       border-image-width: 2.5;
       border-image-outset: 1.25;
+    }
+    .wave {
+      animation: moveTheWave 2400ms linear infinite;
+      stroke-dasharray: 0 16 101 16;
+    }
+
+    @keyframes moveTheWave {
+      0% {
+        stroke-dashoffset: 0;
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        stroke-dashoffset: -133;
+        transform: translate3d(-90px, 0, 0);
+      }
     }
   </style>
 </head>
@@ -37,32 +52,54 @@
             style="height: 6.5rem;">
             nederland
           </div>
-
+          <!-- Left Bottom Group -->
           <div class="flex-auto flex">
             <!-- 25 -->
             <div class="br4 mt1 purple bg-moon-gray flex items-center"
               style="width: 104px; font-size: 4.8rem;">
               <span class="mb2 ml2 pb1">25</span>
             </div>
-
             <!-- osaka -->
             <div class="ml1 pl2 br4 bg-yellow h4 flex-auto self-end flex items-end"
               style="margin-bottom: 3.2rem; height: 6.6rem;">
               <span class="mb3 pb1">osaka</span>
             </div>
           </div>
-
         </div>
 
         <!-- Expo -->
         <div class="ml1 br4 bg-moon-gray self-stretch flex flex-column items-end justify-end"
           style="width: 150px;">
-          <div class="ba bw2 b--purple br3 mr3 mb4"
+          <!-- expo -->
+          <div class="ba bw2 b--purple br3 mr3 mb4 purple"
             style="width: 6.4rem; height: 6.4rem; margin-bottom: 3rem;">
+            <svg width="100%" height="100%"
+              viewBox="5 0 80 60">
+              <g fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round">
+                <g transform="translate(0, -34)">
+                  <path class="wave"
+                    d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </g>
+                <g transform="translate(0, -12)">
+                  <path class="wave"
+                    d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </g>
+                <g transform="translate(0, 12)">
+                  <path class="wave"
+                    d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </g>
+                <g transform="translate(0, 34)">
+                  <path class="wave"
+                    d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </g>
+              </g>
+            </svg>
           </div>
           <span class="mr1" style="margin-bottom: 4.5rem">expo</span>
         </div>
-
         <!-- 70 -->
         <div class="ml1 pb3 br4 bg-yellow flex-auto self-end flex items-end"
           style="margin-bottom: 3.3rem; height: 6.6rem; font-size: 2.5rem;">
@@ -72,6 +109,5 @@
     </div>
   </div>
 
-  <script src="js/index.js"></script>
 </body>
 </html>
